@@ -1,0 +1,429 @@
+@charset "UTF-8";
+/* RESETEO UNIVERSAL */
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FUENTES */
+/* Roboto Mono - Anta - Poppins - Rubik */
+/*VARIABLES*/
+/*COLORES*/
+/*FUENTES*/
+/*TAMAÑOS DE FUENTES*/
+/*H1*/
+/*H2*/
+/*P*/
+/*TITLE NAV*/
+/*LINKS NAV*/
+/*TITLE CARD*/
+/* HEADER */
+.navbar {
+  background-color: #254F81;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  font-weight: bold;
+  font-family: "Anta", sans-serif;
+  font-size: 20px;
+}
+.navbar #title-header {
+  font-size: 28px;
+}
+.navbar a:hover {
+  color: #748386;
+}
+
+/* MAIN */
+main {
+  background-image: url(../multimedia/backgroundimage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+}
+main p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #495057;
+  font-weight: 300;
+}
+main h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* HOME */
+.principal-home h2 {
+  background-color: #0077B6;
+  padding: 10px;
+}
+
+/*GALERIA HOME*/
+.galeria-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 180px);
+  background-color: #CAF0F8;
+  padding: 15px;
+  grid-gap: 15px;
+}
+.galeria-home .item1 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item1:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item2 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item2:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item3 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item3:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item4 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item4:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item5 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item5:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item6 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item6:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item7 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item7:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+.galeria-home .item8 {
+  border: 3px solid #254F81;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(1);
+}
+.galeria-home .item8:hover {
+  transform: scale(1.08);
+  transition: 2s;
+  filter: grayscale(0);
+}
+
+.galeria-home .item1 {
+  background-image: url(../multimedia/img-home1.jpg);
+}
+
+.galeria-home .item2 {
+  background-image: url(../multimedia/img-home2.jpg);
+}
+
+.galeria-home .item3 {
+  background-image: url(../multimedia/img-home3.jpg);
+}
+
+.galeria-home .item4 {
+  background-image: url(../multimedia/img-home4.jpg);
+}
+
+.galeria-home .item5 {
+  background-image: url(../multimedia/img-home5.jpg);
+}
+
+.galeria-home .item6 {
+  background-image: url(../multimedia/img-home6.jpg);
+}
+
+.galeria-home .item7 {
+  background-image: url(../multimedia/img-home7.jpg);
+}
+
+.galeria-home .item8 {
+  background-image: url(../multimedia/img-home8.jpg);
+}
+
+/* SOBRE MI */
+.parrafo-sobremi-izq {
+  text-align: center;
+  padding: 8px;
+}
+
+.parrafo-sobremi-der {
+  text-align: center;
+  padding: 8px;
+}
+
+.contenedor-img-sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.img-sobremi {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  border: 5px #0077B6 outset;
+}
+
+/*TRABAJOS*/
+.carrusel-trabajos .subtitulo-carrusel {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right bottom, #254f81, #24568b, #215e95, #1c659f, #156da9, #1075b1, #087eb9, #0086c1, #0092c8, #009dce, #00a9d4, #00b4d8);
+  border-radius: 20px;
+}
+
+.carrusel-trabajos {
+  height: auto;
+  width: auto;
+}
+
+.carrusel-img {
+  height: 300px;
+}
+
+.carrusel-img-merchandasing {
+  width: 100%;
+}
+
+/* SERVICIOS */
+/*CARD*/
+.card-servicios {
+  background-image: linear-gradient(to bottom, #254f81, #24568b, #215e95, #1c659f, #156da9, #1075b1, #087eb9, #0086c1, #0092c8, #009dce, #00a9d4, #00b4d8);
+}
+.card-servicios .card-servicios-titulo {
+  font-size: 22px;
+  padding: 10px;
+}
+.card-servicios .card-img-servicios {
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.card-servicios .card-servicios-descripcion p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* BOTON SERVICIOS*/
+.btn-servicios {
+  background-color: #0077B6;
+  font-weight: bold;
+  border: solid 3px #748386;
+}
+
+.btn-servicios:hover {
+  background-color: #00B4D8;
+}
+
+/* CONTACTO */
+.btn-form {
+  background-color: #0077B6;
+}
+
+.btn-form:hover {
+  background-color: #00B4D8;
+}
+
+/* FOOTER */
+footer {
+  background-color: #254F81;
+  height: 100%;
+}
+footer .redes a {
+  color: black;
+  text-decoration: none;
+  font-size: 35px;
+}
+footer p {
+  font-family: "Anta", sans-serif;
+  font-size: 18px;
+}
+
+/* MEDIAQUERIES */
+@media only screen and (min-width: 768px) {
+  /*HEADER*/
+  .navbar {
+    font-size: 22px;
+  }
+  .navbar #title-header {
+    font-size: 35px;
+  }
+  /* MAIN */
+  main h1 {
+    font-size: 70px;
+  }
+  main p {
+    font-size: 22px;
+  }
+  main h2 {
+    font-size: 35px;
+  }
+  .collapse {
+    display: flex;
+    justify-content: end;
+  }
+  /*HOME*/
+  #logo-index {
+    height: 400px;
+    width: 400px;
+  }
+  /* GALERIA HOME */
+  .galeria-home {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 180px);
+  }
+  /* SOBRE MI */
+  /*TRABAJOS*/
+  .carrusel-img {
+    height: 300px;
+  }
+  /* SERVICIOS */
+  .card-servicios .card-servicios-titulo {
+    font-size: 28px;
+  }
+  .card-servicios .card-img-servicios {
+    height: 305px;
+  }
+  .card-servicios .card-servicios-descripcion p {
+    font-size: 22px;
+  }
+  /* BOTON SERVICIOS*/
+  .btn-servicios {
+    font-size: 35px;
+  }
+  /*FOOTER*/
+  footer .redes a {
+    font-size: 35px;
+  }
+  footer p {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* HOME MAIN */
+  .principal-home p {
+    font-size: 26px;
+  }
+  .galeria-home {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 180px);
+  }
+  .galeria-home .item:hover {
+    transform: scale(1.03);
+  }
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  .item2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .item3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .item4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+  .item6 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item7 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .item8 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background-position: top;
+  }
+  /* SOBRE MI */
+  .parrafo-sobremi-izq {
+    text-align: justify;
+  }
+  .parrafo-sobremi-der {
+    text-align: justify;
+  }
+  /*TRABAJOS*/
+  .carrusel-img {
+    height: 400px;
+  }
+  .carrusel-img-merchandasing {
+    width: 70%;
+    height: 400px;
+    max-width: none;
+    display: block;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=styles.css.map */

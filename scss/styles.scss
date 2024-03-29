@@ -1,0 +1,438 @@
+/* RESETEO UNIVERSAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* Roboto Mono - Anta - Poppins - Rubik */
+
+/*VARIABLES*/
+
+    /*COLORES*/
+    $color1: #254F81;
+    $color2: #0077B6;
+    $color3: #00B4D8;
+    $color4: #90E0EF;
+    $color5: #CAF0F8;
+    $color6: #748386;
+    $color7: #495057;
+
+    /*FUENTES*/
+    $font1: "Anta", sans-serif;
+    ; // HEADER Y FOOTER
+    $font2: "Rubik", sans-serif; // TITLES
+    $font3: "Roboto Mono", monospace; // SUBTITLES
+    $font4: "Poppins", sans-serif; // PARRAFOS
+
+    /*TAMAÑOS DE FUENTES*/
+    /*H1*/
+    $fsizeh1: 45px;
+    $fsizeh1-md: 70px;
+    /*H2*/
+    $fsizeh2: 25px;
+    $fsizeh2-md: 35px;
+    /*P*/
+    $fsizep: 18px;
+    $fsizep-md: 22px;
+    /*TITLE NAV*/
+    $fsizetitlenav: 28px;
+    $fsizetitlenav-md: 35px;
+    /*LINKS NAV*/
+    $fsizenav: 20px;
+    $fsizenav-md: 22px;
+    /*TITLE CARD*/
+    $fsizecard: 22px;
+    $fsizecard-md: 28px;
+
+/* HEADER */
+.navbar{
+    background-color: $color1;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    font-weight: bold;
+    font-family: $font1;
+    font-size: $fsizenav;
+
+        #title-header{
+            font-size: $fsizetitlenav;
+        }
+        // NAV HOVER
+        a:hover{
+            color: $color6;
+        }
+}
+
+
+/* MAIN */
+main{
+    background-image: url(../multimedia/backgroundimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+        h1{
+            font-family: $font2;
+            font-weight: bold;
+            font-size: $fsizeh1;
+        }
+
+        p{
+            font-size: $fsizep;
+            font-family: $font4;
+            color: $color7;
+            font-weight: 300;
+        }
+
+        h2{
+            font-family: $font3;
+            font-size: $fsizeh2;
+            font-weight: bold;
+        }
+}
+
+/* HOME */
+.principal-home{
+
+    h2{
+        background-color: $color2;
+        padding: 10px;
+    }
+}
+
+/*GALERIA HOME*/
+$numero-items: 8;
+
+.galeria-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(#{$numero-items}, 180px); 
+    background-color: $color5;
+    padding: 15px;
+    grid-gap: 15px;
+
+    @for $i from 1 through $numero-items {
+        .item#{$i} {
+            border: 3px solid $color1;
+            background-size: cover;
+            background-position: center;
+            filter: grayscale(1);
+
+            &:hover {
+                transform: scale(1.08);
+                transition: 2s;
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+@for $i from 1 through $numero-items {
+    .galeria-home .item#{$i} {
+        background-image: url(../multimedia/img-home#{$i}.jpg);
+    }
+}
+
+/* SOBRE MI */
+
+.parrafo-sobremi-izq{
+    text-align: center;
+    padding: 8px;
+}
+
+.parrafo-sobremi-der{
+    text-align: center;
+    padding: 8px;
+}
+
+.contenedor-img-sobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.img-sobremi{
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    border: 5px $color2 outset;
+}
+
+/*TRABAJOS*/
+
+.carrusel-trabajos{
+
+    .subtitulo-carrusel{
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-image: linear-gradient(to right bottom, #254f81, #24568b, #215e95, #1c659f, #156da9, #1075b1, #087eb9, #0086c1, #0092c8, #009dce, #00a9d4, #00b4d8);
+        border-radius: 20px;
+    }
+}
+
+.carrusel-trabajos{
+    height: auto;
+    width: auto;
+}
+
+.carrusel-img{
+    height: 300px;
+}
+
+.carrusel-img-merchandasing{
+    width: 100%;
+}
+
+/* SERVICIOS */
+
+/*CARD*/
+.card-servicios{
+    background-image: linear-gradient(to bottom, #254f81, #24568b, #215e95, #1c659f, #156da9, #1075b1, #087eb9, #0086c1, #0092c8, #009dce, #00a9d4, #00b4d8);
+
+    .card-servicios-titulo{
+        font-size: $fsizecard;
+        padding: 10px;
+    }
+
+    .card-img-servicios{
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .card-servicios-descripcion p{
+        font-size: $fsizep;
+        font-family: $font4;
+    }
+}
+
+/* BOTON SERVICIOS*/
+
+.btn-servicios{
+    background-color: $color2;
+    font-weight: bold;
+    border: solid 3px $color6;
+}
+
+.btn-servicios:hover{
+    background-color: $color3;
+}
+
+/* CONTACTO */
+
+.btn-form{
+    background-color: $color2;
+}
+    .btn-form:hover{
+        background-color: $color3;
+    }
+
+
+/* FOOTER */
+footer{
+    background-color: $color1;
+    height: 100%;
+
+        .redes a{
+            color: black;
+            text-decoration: none;
+            font-size: 35px ;
+        }
+
+        p{
+            font-family: $font1;
+            font-size: $fsizep;
+        }
+}
+
+
+/* MEDIAQUERIES */
+@media only screen and (min-width: 768px){
+    
+    /*HEADER*/
+
+    .navbar{
+        font-size: $fsizenav-md ;
+
+            #title-header{
+                font-size: $fsizetitlenav-md;
+            }
+    }
+    
+
+    /* MAIN */
+
+    main{
+            h1{
+                font-size: $fsizeh1-md;
+            }
+
+            p{
+                font-size: $fsizep-md;
+            }
+
+            h2{
+                font-size: $fsizeh2-md;
+            }
+        }
+    
+
+    .collapse{
+        display: flex;
+        justify-content: end;
+    }
+
+    /*HOME*/
+
+    #logo-index{
+        height: 400px;
+        width: 400px;
+    }
+
+     /* GALERIA HOME */
+
+    .galeria-home{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 180px);
+    }
+
+    /* SOBRE MI */
+
+    /*TRABAJOS*/
+
+    .carrusel-img{
+        height: 300px;
+    }
+
+    /* SERVICIOS */
+
+    .card-servicios{
+
+        .card-servicios-titulo{
+            font-size: $fsizecard-md;
+        }
+
+        .card-img-servicios{
+            height: 305px;
+        }
+
+        .card-servicios-descripcion p{
+            font-size: $fsizep-md;
+
+        }
+    }
+
+    /* BOTON SERVICIOS*/
+
+    .btn-servicios{
+        font-size: $fsizeh2-md;
+    }
+
+    /*FOOTER*/
+    footer{
+            .redes a{
+                font-size: 35px ;
+            }
+    
+            p{
+                font-size: $fsizep-md;
+            }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    /* HOME MAIN */
+    .principal-home{
+
+        p{
+            font-size: 26px;
+        }
+    }
+
+    .galeria-home{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 180px);
+    }
+
+    .galeria-home .item:hover{
+        transform: scale(1.03);
+    }
+
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .item2{
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .item3{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .item4{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .item5{
+        grid-column: 3/5;
+        grid-row: 3/5;
+    }
+
+    .item6{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .item7{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .item8{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        background-position: top;
+    }
+
+    /* SOBRE MI */
+
+.parrafo-sobremi-izq{
+    text-align: justify;
+}
+
+.parrafo-sobremi-der{
+    text-align: justify;
+}
+
+    /*TRABAJOS*/
+
+    .carrusel-img{
+        height: 400px;
+    }
+    
+    .carrusel-img-merchandasing{
+        width: 70%;
+        height: 400px;
+        max-width: none;
+        display: block; 
+        margin: 0 auto; 
+    }
+
+}
