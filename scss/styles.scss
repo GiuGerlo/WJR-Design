@@ -82,6 +82,7 @@ main{
             font-family: $font2;
             font-weight: bold;
             font-size: $fsizeh1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         p{
@@ -91,10 +92,28 @@ main{
             font-weight: 300;
         }
 
+            .bold-italic1{
+                font-style: italic;
+                font-weight: 1000;
+                color: $color1;
+            }
+
+            .bold-italic2{
+                font-style: italic;
+                font-weight: 500;
+                color: $color2;
+            }
+
+            .italic{
+                font-style: italic;
+                font-weight: 500;
+            }
+
         h2{
             font-family: $font3;
             font-size: $fsizeh2;
             font-weight: bold;
+            text-shadow: 5px 6px 0px rgba(116, 131, 134, 0.44);
         }
 }
 
@@ -159,11 +178,17 @@ $numero-items: 8;
     margin-bottom: 20px;
 }
 
+.contenedor-img-sobremi:hover{
+    transform: scale(1.02);
+    transition: 2s;
+}
+
 .img-sobremi{
     max-width: 100%;
     height: auto;
     max-height: 100%;
     border: 5px $color2 outset;
+    border-radius: 10px;
 }
 
 /*TRABAJOS*/
@@ -201,6 +226,7 @@ $numero-items: 8;
     .card-servicios-titulo{
         font-size: $fsizecard;
         padding: 10px;
+        font-style: italic;
     }
 
     .card-img-servicios{
@@ -244,10 +270,15 @@ footer{
     background-color: $color1;
     height: 100%;
 
-        .redes a{
+        .redes a {
             color: black;
             text-decoration: none;
             font-size: 35px ;
+            align-items: baseline;
+        }
+
+        .redes i:hover{
+            transform: scale(1.3);
         }
 
         p{

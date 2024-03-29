@@ -13,7 +13,7 @@
     <!-- FONTA AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../scss/styles.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -21,7 +21,7 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar navbar-expand-md p-2">
-                        <a class="navbar-brand" href="#" id="title-header">WJR Design</a>
+                        <a class="navbar-brand" href="../index.html" id="title-header">WJR Design</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -55,11 +55,11 @@
                 <div class="col-md-8">
                     <div class="principal-contacto text-center p-3">
                         <h1>Contacto</h1>
-                        <p>¡Hagamos realidad tu visión! Estoy aquí para convertir tus ideas en diseños vibrantes y memorables. ¿Listo para dar vida a tu proyecto? ¡Contáctame hoy mismo y comencemos a crear algo increíble juntos! Tu próximo diseño único está a solo un clic de distancia.</p>
-                        <h2>FORMULARIO DE CONTACTO</h2>
-                        <form action="" method="post" enctype="text/plain">
+                        <p><span class="bold-italic1">¡Hagamos realidad tu visión!</span> Estoy aquí <span class="italic">para convertir tus ideas en diseños vibrantes y memorables.</span><span class="bold-italic1">¿Listo para dar vida a tu proyecto?</span><span class="italic">¡Contáctame hoy mismo y comencemos a crear algo increíble juntos!</span> Tu próximo diseño único está a <span class="bold-italic1">solo un clic</span> de distancia.</p>
+                        <h2 class="mb-5">FORMULARIO DE CONTACTO</h2>
+                        <form action="https://formspree.io/f/xleqplnw" method="post">
                             <div class="mb-3 row align-items-center">
-                                <label for="servicio" class="form-label col-md-4">Seleccionar servicio:</label>
+                                <label for="servicio" class="form-label col-md-4 fw-bold">Seleccionar servicio:</label>
                                 <div class="col-md-8">
                                     <select class="form-select" name="servicio" id="servicio" required>
                                         <option value="diseño grafico">Diseño gráfico</option>
@@ -71,42 +71,42 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="mb-3 row align-items-center">
+                            <div class="mb-3 row align-items-center fw-bold">
                                 <label for="nombreApellido" class="form-label col-md-4">Nombre y Apellido:</label>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="nombreApellido" placeholder="Tu nombre y apellido" name="nombreApellido" required>
                                 </div>
                             </div>
                             <div class="mb-3 row align-items-center">
-                                <label for="telefono" class="form-label col-md-4">Teléfono:</label>
+                                <label for="telefono" class="form-label col-md-4 fw-bold">Teléfono:</label>
                                 <div class="col-md-8">
                                     <input type="tel" class="form-control" id="telefono" placeholder="3468 912912" name="telefono" required>
                                 </div>
                             </div>
                             <div class="mb-3 row align-items-center">
-                                <label for="correo" class="form-label col-md-4">Correo electrónico:</label>
+                                <label for="correo" class="form-label col-md-4 fw-bold">Correo electrónico:</label>
                                 <div class="col-md-8">
                                     <input type="email" class="form-control" id="correo" placeholder="aaa@gmaill.com" name="correo" required>
                                 </div>
                             </div>
                             <div class="mb-3 row align-items-center">
-                                <label for="localidad" class="form-label col-md-4">Localidad:</label>
+                                <label for="localidad" class="form-label col-md-4 fw-bold">Localidad:</label>
                                 <div class="col-md-8">
                                     <input type="text" class="form-control" id="localidad" placeholder="Rosario" name="localidad" required>
                                 </div>
                             </div>
                             <div class="mb-3 row align-items-center">
-                                <label for="mensaje" class="form-label col-md-4">Mensaje:</label>
+                                <label for="mensaje" class="form-label col-md-4 fw-bold">Mensaje:</label>
                                 <div class="col-md-8">
                                     <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Hola..." required></textarea>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <button type="submit" class="btn btn-form">Enviar formulario</button>
+                                    <button type="submit" value="enviar" class="btn btn-form fw-bold">Enviar formulario</button>
                                 </div>
                                 <div class="col-6">
-                                    <a href="https://wa.link/jr55xz" target="_blank" class="btn btn-success">Contactame por Whatsapp</a>
+                                    <a href="https://wa.link/jr55xz" target="_blank" class="btn btn-success fw-bold">Contactame por Whatsapp</a>
                                 </div>
                             </div>
                         </form>
@@ -120,12 +120,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col d-flex align-items-center p-2">
-                    <div class="logo-footer me-auto">
+                    <div class="me-auto">
                         <a href="#">
                             <img src="../multimedia/LOGO-WJR-DESIGN.svg" alt="Logo WJR Design" height="40px" width="40px">
                         </a>
                     </div>
-                    <p class="text-center align-self-center m-0">Copyright ©2024 All rights reserved</p>
+                    <p class="text-center align-self-center m-0 redes">© 2024 Giuliano Gerlo. All rights reserved. | <a href="https://github.com/GiuGerlo" target="_blank"><i class="fa-brands fa-github"></i></a> | <a href="https://www.linkedin.com/in/giuliano-gerlo-21a7b8221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
                     <div class="redes ms-auto">
                         <a href="https://www.instagram.com/walraccone" target="_blank">
                             <i class="fa-brands fa-instagram"></i>
