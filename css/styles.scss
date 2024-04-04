@@ -73,7 +73,7 @@
 
 /* MAIN */
 main{
-    background-image: url(../multimedia/backgroundimage.jpg);
+    background-image: url(../assets/backgroundimage.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -155,7 +155,7 @@ $numero-items: 8;
 
 @for $i from 1 through $numero-items {
     .galeria-home .item#{$i} {
-        background-image: url(../multimedia/img-home#{$i}.jpg);
+        background-image: url(../assets/img-home#{$i}.jpg);
     }
 }
 

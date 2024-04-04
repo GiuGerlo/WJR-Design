@@ -42,7 +42,7 @@
 
 /* MAIN */
 main {
-  background-image: url(../multimedia/backgroundimage.jpg);
+  background-image: url(../assets/backgroundimage.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -185,35 +185,35 @@ main h2 {
 }
 
 .galeria-home .item1 {
-  background-image: url(../multimedia/img-home1.jpg);
+  background-image: url(../assets/img-home1.jpg);
 }
 
 .galeria-home .item2 {
-  background-image: url(../multimedia/img-home2.jpg);
+  background-image: url(../assets/img-home2.jpg);
 }
 
 .galeria-home .item3 {
-  background-image: url(../multimedia/img-home3.jpg);
+  background-image: url(../assets/img-home3.jpg);
 }
 
 .galeria-home .item4 {
-  background-image: url(../multimedia/img-home4.jpg);
+  background-image: url(../assets/img-home4.jpg);
 }
 
 .galeria-home .item5 {
-  background-image: url(../multimedia/img-home5.jpg);
+  background-image: url(../assets/img-home5.jpg);
 }
 
 .galeria-home .item6 {
-  background-image: url(../multimedia/img-home6.jpg);
+  background-image: url(../assets/img-home6.jpg);
 }
 
 .galeria-home .item7 {
-  background-image: url(../multimedia/img-home7.jpg);
+  background-image: url(../assets/img-home7.jpg);
 }
 
 .galeria-home .item8 {
-  background-image: url(../multimedia/img-home8.jpg);
+  background-image: url(../assets/img-home8.jpg);
 }
 
 /* SOBRE MI */
